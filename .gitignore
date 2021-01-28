@@ -1,0 +1,6 @@
+/index.d.ts
+/index.js
+/node_modules
+/package-lock.json
+*.log
+*.tgz
