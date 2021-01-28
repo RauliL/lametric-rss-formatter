@@ -16,7 +16,10 @@ const { format } = require('lametric-rss-formatter');
 
 const app = express();
 
-app.get('/', (req, res) => res.send(format({ url: 'https://www.reddit.com/.rss' })));
+app.get('/', (req, res) =>
+  format({ url: 'https://www.reddit.com/.rss' })
+    .then((result) => res.send(result))
+);
 ```
 
 ### Options
